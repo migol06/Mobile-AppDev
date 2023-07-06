@@ -29,17 +29,13 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('NT Hello World Application')),
+      appBar: AppBar(
+        title: const Text('Button'),
+      ),
       body: Center(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Container(width: 100, height: 100, color: Colors.red),
-            const SizedBox(width: 10),
-            Container(width: 100, height: 100, color: Colors.green),
-            const SizedBox(width: 10),
-            Container(width: 100, height: 100, color: Colors.blue),
-          ],
+        child: ElevatedButton(
+          child: const Text('This is a button'),
+          onPressed: () {},
         ),
       ),
     );
